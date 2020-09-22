@@ -1,0 +1,5 @@
+<h2><%= @task.title %></h2>
+<p><%= @task.details %></p>
+<p><input type="checkbox" <%= 'checked' if @task.completed %> ><%= @completed %></p>
+<p><%= link_to "Edit this task", edit_tasks_path(@task) %></p>
+<p><%= link_to "Back to list", tasks_path %></p>

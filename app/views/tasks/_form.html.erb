@@ -1,0 +1,7 @@
+
+<%= simple_form_for(@task) do |form| %>
+  <%= form.input :title, placeholder: 'Input a tigle' %>
+  <%= form.input :details, placeholder: 'Whats the details?' %>
+  <%= form.check_box :completed, checked: true %>
+  <%= form.submit action_name == 'new' ? 'save task' : 'edit task' %>
+<% end %>
